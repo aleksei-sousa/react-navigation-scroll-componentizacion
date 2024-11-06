@@ -1,29 +1,30 @@
 import { Text, View, StyleSheet, StatusBar, TouchableOpacity } from "react-native";
 import { Link } from 'expo-router';
 import ButtonNavigation from "@/src/components/ButtonNavigation";
+
+
 export default function Index() {
 
-
-  
   return (
-    <View style={styles.container}>
-        <StatusBar
-          animated={true}
-          backgroundColor="#61dafb"
-        />
-        <Text style={styles.title}>
-          Index
-        </Text>
-        {/* <TouchableOpacity style={styles.btn}>
-          <Link style={styles.btnText} href="/(tabs)/">Tabs</Link>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.btn}>
-          <Link style={styles.btnText} href="/ViewsType/">ViewsType</Link>
-        </TouchableOpacity> */}
-        <ButtonNavigation destination='/(tabs)/' title="Tabs"/>
-        <ButtonNavigation destination='/ViewsType/' title="ViewsType"/>
-        
-    </View> 
+
+      <View style={styles.container}>
+          <StatusBar
+            animated={true}
+            backgroundColor="#61dafb"
+          />
+          <Text style={styles.title}>
+            Index
+          </Text>
+          {/* <TouchableOpacity style={styles.btn}>
+            <Link style={styles.btnText} href="/(tabs)/">Tabs</Link>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.btn}>
+            <Link style={styles.btnText} href="/ViewsType/">ViewsType</Link>
+          </TouchableOpacity> */}
+          <ButtonNavigation destination='/(tabs)/' title="Tabs"/>
+          <ButtonNavigation destination='/ViewsType/' title="ViewsType"/>
+          <ButtonNavigation destination='/StyledComponents/StyledComponents ' title="Styled Components"/>
+      </View>
   );
 }
 

@@ -1,7 +1,9 @@
 import styled from 'styled-components/native'
 
-export default styled.Text`
-    color: '#f64348';
-    font-size: 40px;
+const StyledTitle = styled.Text`    
+  font-size: 24px;
+  text-align: center;
+  color: ${(props) => props.theme.colors.light};
+`;
 
-`
+export default StyledTitle;

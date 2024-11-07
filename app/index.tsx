@@ -1,6 +1,7 @@
 import { Text, View, StyleSheet, StatusBar, TouchableOpacity } from "react-native";
 import { Link } from 'expo-router';
 import ButtonNavigation from "@/src/components/ButtonNavigation";
+import StyledTitle from "@/src/components/StyledTitle";
 
 
 export default function Index() {
@@ -12,9 +13,10 @@ export default function Index() {
             animated={true}
             backgroundColor="#61dafb"
           />
-          <Text style={styles.title}>
-            Index
-          </Text>
+          <StyledTitle>
+            Home
+          </StyledTitle>
+
           {/* <TouchableOpacity style={styles.btn}>
             <Link style={styles.btnText} href="/(tabs)/">Tabs</Link>
           </TouchableOpacity>

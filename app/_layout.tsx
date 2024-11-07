@@ -2,6 +2,15 @@ import { Stack } from 'expo-router/stack';
 
 import { ThemeProvider } from "styled-components/native";
 
+
+import { useFonts } from 'expo-font'
+import { Roboto_700Bold } from '@expo-google-fonts/roboto'
+import * as SplashScreen from 'expo-splash-screen'
+import { useCallback } from 'react';
+import { View } from 'react-native'
+
+//SplashScreen.preventAutoHideAsync()
+
 const theme = {
   colors: {
     red: "#f64348",
@@ -10,11 +19,18 @@ const theme = {
 
   },
   fonts: {
-
+    Roboto700: 'Roboto_700Bold'
   }
 }
 
 export default function Layout() {
+
+  const [fontsLoaded] = useFonts({ Roboto_700Bold })
+
+  if(!fontsLoaded){
+    return null
+  }
+
   return (
 <ThemeProvider theme={theme}>
     <Stack>

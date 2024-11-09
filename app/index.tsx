@@ -26,6 +26,7 @@ export default function Index() {
           <ButtonNavigation destination='/(tabs)/' title="Tabs"/>
           <ButtonNavigation destination='/ViewsType/' title="ViewsType"/>
           <ButtonNavigation destination='/StyledComponents/StyledComponents ' title="Styled Components"/>
+          <ButtonNavigation destination='/UsingApi' title={"UsingApi"} />
       </View>
   );
 }

@@ -4,7 +4,7 @@ const StyledTitle = styled.Text`
   font-family: ${({theme}) => theme.fonts.Roboto700}; 
   font-size: 26px;
   text-align: center;
-  color: ${(props) => props.theme.colors.red};
+  color: ${(props) => props.theme.colors.dark};
 `;
 
 export default StyledTitle;
